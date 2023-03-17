@@ -2,3 +2,26 @@
   width: 100vw;
   height: 100vh;
 }
+.map-container {
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 15px;
+}
+.data{
+  width: 80%;
+  margin-left: 20%;
+}
+.marker{
+  background-image: url('https://w7.pngwing.com/pngs/731/25/png-transparent-location-icon-computer-icons-google-map-maker-marker-pen-cartodb-map-marker-heart-logo-color-thumbnail.png');
+}
