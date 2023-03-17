@@ -25,6 +25,16 @@ import User from './components/User';
 import Datastate from './context/datastate';
 import Downnav from './components/Downnav';
 import Notification from './components/Notification';
+import Account from './components/Account';
+import Profile from './components/Profile';
+import More from './components/Other/More';
+import Contact from './components/Other/Contact';
+import About from './components/Other/About';
+import Help from './components/Other/Help';
+import DeleteAccount from './components/Other/DeleteAccount';
+import ChangePassword from './components/Other/ChangePassword';
+import Battery from './components/Battery/Battery';
+import Home from './components/Leading-vehicle/Home';
 function App() {
 
   return (
@@ -33,19 +43,29 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<>
-<Navbar /><Landing /><Downnav /></>}/>
+              <Navbar /><Landing /><Downnav /></>} />
             <Route path="/about" element={<>
               <Navbar /><Landing /><Downnav /></>} />
-            <Route path="/more" element={<>
+
+            <Route path="/history" element={<>
               <Navbar /><History /> <Downnav /></>} />
-              <Route path="/history" element={<>
-                <Navbar /><History /> <Downnav /></>} />
             <Route path="/notification" element={<>
               <Navbar /><Notification /> <Downnav /></>} />
             <Route path="/user" element={<>
-              <Navbar /><User /> <Downnav /></>} />
+              <Navbar /><Profile /> <Downnav /></>} />
+            <Route path="/about-us" element={<>
+              <Navbar /><About /> <Downnav /></>} />
+            <Route path="/help" element={<>
+              <Navbar /><Help /> <Downnav /></>} />
+            <Route path="/deleteaccount" element={<>
+              <Navbar /><DeleteAccount /> <Downnav /></>} />
+            <Route path="/change-password" element={<>
+              <Navbar /><ChangePassword /> <Downnav /></>} />
+
             <Route path="/contact" element={<>
-              <Navbar /><Landing /><Downnav /></>} />
+              <Navbar /><Contact /><Downnav /></>} />
+            <Route path="/more" element={<>
+              <Navbar /><More /><Downnav /></>} />
             <Route path="/login" element={<Login />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/chargingpoint" element={<>
@@ -61,9 +81,17 @@ function App() {
             <Route path="/agencies/:agencies" element={<>
               <Navbar /><Particularagaencies /><Downnav /></>} />
             <Route path="/cafe/:cafe" element={<>
-              <Navbar /><Particularcafe /><Downnav /></>}/>
+              <Navbar /><Particularcafe /><Downnav /></>} />
             <Route path="/mechanic/:mechanic" element={<>
-              <Navbar /><Particularmachanic /><Downnav /></>}/>
+              <Navbar /><Particularmachanic /><Downnav /></>} />
+
+            <Route path="/account" element={<>
+              <Navbar /><Account /><Downnav /></>} />
+
+              <Route path="/battery" element={<>
+              <Navbar /><Battery/><Downnav /></>} />
+              <Route path="/renting-car" element={<>
+              <Navbar /><Home/><Downnav /></>} />
           </Routes>
         </Router>
       </Datastate>

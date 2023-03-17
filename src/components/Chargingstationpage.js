@@ -1,30 +1,25 @@
 import React, { useContext } from 'react';
-import Map from './Map';
+import Map111 from './Map111';
 import {
   Link
 } from "react-router-dom";
 import Datacontext from '../context/datacontext';
 import Downnav from './Downnav';
-import Login from './Login';
 const Chargingstationpage = () => {
   var context = useContext(Datacontext);
   var { station } = context
   console.log(station)
   return (
     <>
-    
       <div className='md:flex flex-wrap hidden'>
         <div className='w-1/4 h-screen border-stone-900 border '>
           <section className="text-gray-600 h-[99vh] overflow-y-scroll body-font">
             <div className="container px-2 mb-7 py-20 mx-auto">
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
-                <input type="search" id="default-search" class="
-        
-        block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-2xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
-              </div>
+                </div>
               {station && ((station.map((note) => {
 
                 return (
@@ -55,12 +50,13 @@ const Chargingstationpage = () => {
           </section>
         </div>
         <div className='w-3/4 h-screen border '>
+          <Map111 />
         </div>
       </div>
 
-
-<Downnav/>
-<Login/>          </>
+      <Downnav />
+      <Map111 />
+    </>
   )
 }
 

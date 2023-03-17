@@ -6,7 +6,6 @@ import 'swiper/css';
 import { EffectFade } from 'swiper';
 import 'swiper/css/effect-fade';
 
-import { useSwiper } from 'swiper/react';
 // import { clear } from '@testing-library/user-event/dist/clear';
 
 const Landing = () => {

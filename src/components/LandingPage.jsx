@@ -12,7 +12,7 @@ const LandingPage = () => {
     const swiper = useSwiper();
     const hero = 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png';
 
-    return (
+    return (       
         <div>
 
 <div className='hidden lg:block'>

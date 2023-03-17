@@ -1,6 +1,6 @@
 import React from 'react'
 
-function App() {
+function Account() {
   return (
     <div>
     <div className="navbar bg-base-100 shadow-sm overflow-hidden">
@@ -8,7 +8,7 @@ function App() {
   <b>Account</b>
   </div>
 
-  <div className=" w-full max-w-xs p-3">
+  <div className="w-screen p-3">
   <label className='p-1'>User's Details</label>
   <div class="text-center p-3">
   <img
@@ -54,4 +54,4 @@ function App() {
   )
 }
 
-export default App
+export default Account
