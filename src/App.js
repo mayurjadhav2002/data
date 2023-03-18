@@ -35,6 +35,7 @@ import DeleteAccount from './components/Other/DeleteAccount';
 import ChangePassword from './components/Other/ChangePassword';
 import Battery from './components/Battery/Battery';
 import Home from './components/Leading-vehicle/Home';
+import Navbar2 from './components/Navbar2';
 function App() {
 
   return (
@@ -45,7 +46,7 @@ function App() {
             <Route path="/" element={<>
               <Navbar /><Landing /><Downnav /></>} />
             <Route path="/about" element={<>
-              <Navbar /><Landing /><Downnav /></>} />
+              <Navbar /><Landing /></>} />
 
             <Route path="/history" element={<>
               <Navbar /><History /> <Downnav /></>} />
@@ -69,7 +70,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/chargingpoint" element={<>
-              <Navbar /><Chargingstationpage /><Downnav /></>} />
+              <Navbar2 /><Chargingstationpage /><Downnav /></>} />
             <Route path="/agencies" element={<>
               <Navbar /><Agiencies /><Downnav /></>} />
             <Route path="/cafe" element={<>
