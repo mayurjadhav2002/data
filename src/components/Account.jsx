@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Account() {
   return (
@@ -8,7 +9,7 @@ function Account() {
   <b>Account</b>
   </div>
 
-  <div className="w-screen p-3">
+  <div className="w-screen p-3 lg:p-24">
   <label className='p-1'>User's Details</label>
   <div class="text-center p-3">
   <img
@@ -45,7 +46,7 @@ function Account() {
 
 
 <div class="text-end p-3">
-<button className='btn btn-outline btn-primary' type='button'>Edit</button>
+<Link to='/editaccount' className='btn btn-outline btn-primary' type='button'>Edit</Link>
 </div>
 
     </div>

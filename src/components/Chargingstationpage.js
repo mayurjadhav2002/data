@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import Map111 from './Map111';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 import {
   Link
 } from "react-router-dom";
-import Datacontext from '../context/datacontext';
 import Downnav from './Downnav';
 import Maps from './Maps';
 const Chargingstationpage = () => {
-  var context = useContext(Datacontext);
-  var { station } = context
-  console.log(station)
+
   return (
     <>
 
@@ -17,7 +17,13 @@ const Chargingstationpage = () => {
         <Maps />
       </div>
       <div className='block lg:hidden'>
+            
+      
       <Maps />
+
+
+      
+
 
       </div>
 

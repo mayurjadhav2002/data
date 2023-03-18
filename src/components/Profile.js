@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom'
 
 function Profile() {
   return (
-    <div>
-    <div class="text-center p-3">
+    <div className='lg:p-24 p-1'>
+    <div></div>
+    <div class="text-center p-3 ">
     <img
       src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
       class="mx-auto mb-4 avatar w-32 rounded-full shadow-lg"
       alt="Avatar" />
-    <h5 class=" text-xl font-medium leading-tight">John Doe</h5>
+    <h5 class="text-xl font-medium leading-tight">John Doe</h5>
     <p class="text-neutral-500 dark:text-neutral-400">Web designer</p> 
   </div>
   <div>
-  <ul className="menu bg-base-100 w-screen  rounded-box">
+  <ul className="menu bg-base-100 w-screen rounded-box">
   <li className="menu-title">
     <span>Profile</span>
   </li>

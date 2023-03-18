@@ -12,7 +12,8 @@ const Navbar2 = () => {
     history("/")
   }
   var context = useContext(Datacontext);
-  var { zip } = context
+  var { station } = context
+  console.log(station)
   return (
 
     <nav className="bg-transparent justify-center px-2 sm:px-4 py-2 hidden md:block dark:bg-gray-900 fixed w-full z-20 top-0 left-0 
@@ -20,7 +21,7 @@ const Navbar2 = () => {
       <div className="container flex flex-wrap items-center justify-between mx-auto right-0">
        
      
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <div className="items-center mx-2.5 right-0  justify-between hidden w-screen md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul className="flex flex-col px-4 py-5 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {!localStorage.getItem("eflux") && (<li>
               <Link to="/" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</Link>
@@ -50,17 +51,22 @@ const Navbar2 = () => {
            <input className='input p-4' placeholder='Search___'/>
          </a>
       </li>
+      {station && ((station.map((note) => {
+
+        return (
       <li>
-         <a href="#" class="flex items-center p-2 text-base font-
+         <Link to={`/chargingpoint/${note._id}`} className="flex items-center p-2 text-base font-
          bg-gray-200
          text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
 
 <img src='https://flowbite.com/docs/images/logo.svg' className='flex-shrink-0'/> 
     
-    <span class="flex-1 ml-3 ">Rahul Thatar Hello  my Name is Masyur <br></br><sm className='text-sm text-gray-500'>Panvel Navi Mumbai</sm></span>
-         </a>
+    <span class="flex-1 ml-3 ">{note.name} <br></br><sm className='text-sm text-gray-500'>{note.zipcode}</sm></span>
+         </Link>
       </li>
-      
+      );
+              }
+              )))}
    </ul>
 </div>
 </aside>

@@ -21,7 +21,6 @@ import Landing from './components/Landing';
 import Login from './components/Login';
 import Signin from './components/Signin';
 import History from './components/History';
-import User from './components/User';
 import Datastate from './context/datastate';
 import Downnav from './components/Downnav';
 import Notification from './components/Notification';
@@ -44,7 +43,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<>
-              <Navbar /><Landing /><Downnav /></>} />
+              <Navbar /><Landing /></>} />
             <Route path="/about" element={<>
               <Navbar /><Landing /></>} />
 

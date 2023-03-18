@@ -1,39 +1,36 @@
-import React, { useRef, useEffect, useState } from 'react';
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import * as React from 'react';
+import Map, {NavigationControl,Marker} from 'react-map-gl';
+import maplibregl from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import '../App.css';
+import Datacontext from '../context/datacontext';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoidGhlZGlzY291bnRjb3Vwb24iLCJhIjoiY2xmOHI1NDRxMDE3ZDN4cWtlejY3ZGxuMiJ9.4YSA8wKeiyoPuNvSHNH1FA';
-export default function Maps() {
-    const mapContainer = useRef(null);
-    const map = useRef(null);
-    const [lng, setLng] = useState(73.152397);
-    const [lat, setLat] = useState(18.8982);
-    const [zoom, setZoom] = useState(15);
+function Maps() {
+  var context = React.useContext(Datacontext);
+  var { agency } = context
+  return (
+    <div className="App">
+      <Map mapLib={maplibregl} 
+        initialViewState={{
+          longitude: 73.027257,
+          latitude: 19.024405,
+          zoom: 14
+        }}
+        style={{width: "100%", height: " calc(100vh)"}}
+        
+        mapStyle="https://api.maptiler.com/maps/streets-v2/style.json?key=cVWyrsbwYYISvHVDxDcq"
+      >
+        <NavigationControl position="top-left" />
+        {agency && ((agency.map((note) => {
 
-    useEffect(() => {
-        if (map.current) return; // initialize map only once
-        map.current = new mapboxgl.Map({
-            container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/streets-v12',
-            center: [lng, lat],
-            zoom: zoom
-        });
-    });
-
-
-    useEffect(() => {
-        if (!map.current) return; // wait for map to initialize
-        map.current.on('move', () => {
-            setLng(map.current.getCenter().lng.toFixed(4));
-            setLat(map.current.getCenter().lat.toFixed(4));
-            setZoom(map.current.getZoom().toFixed(2));
-
-        });
-    });
-
-    return (
-        <div>
-
-            <div ref={mapContainer} className="map-container h-screen" />
-        </div>
-    );
+          return (
+                      <Marker latitude={73.027257} longitude={19.027257} color='#61dbfb'></Marker>
+                      );
+                        }
+                        )))}       
+      </Map>
+    </div>
+  );
 }
+
+export default Maps;

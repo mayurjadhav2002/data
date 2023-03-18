@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Downnav = () => {
     return (
-        <nav className="md:ml-auto md:hidden border-0 rounded-lg text-center  md:mr-auto flex fixed bottom-0 bg-white justify-between flex-wrap items-center text-base w-full py-2 px-2">
+        <nav className="md:ml-auto md:hidden border-0 rounded-lg text-center  md:mr-auto flex fixed bottom-0 bg-white justify-between flex-wrap items-center 
+        text-base w-full py-2 px-2">
             <Link to="/chargingpoint" className="mr-5 p-1 hover:text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-house-fill text-black" viewBox="0 0 16 16">
                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
                 <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
@@ -17,7 +18,7 @@ const Downnav = () => {
             </svg></Link>
             <Link to="/more" className="mr-5 hover:text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"  fill="currentColor" className="bi bi-three-dots-vertical" viewBox="0 0 16 16">
             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-          </svg></Link>
+          </svg>hi</Link>
         </nav>
     )
 }

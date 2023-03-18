@@ -426,7 +426,7 @@ const Landing = () => {
 
 
 
-            <div className='md:block lg:hidden'>
+            <div className='md:block lg:hidden overflow-hidden h-screen'>
 
                 <Swiper modules={[EffectFade]} effect="Coverflow"
                     Autoplay
@@ -438,28 +438,24 @@ const Landing = () => {
                 >
                     <SwiperSlide >
                         <div className=' bg-slate-100  Hello'>
-                            <div className="max-w-screen-sm min-h-screen text-white" style={{
-                                background: "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
+                            <div className="max-w-screen-sm min-h-screen text-white" style={{ 
+                                color:"gray"
                             }}>
                                 <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                                    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={hero} />
+                                    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src='../../aboutus.png' />
                                     <div className="text-center lg:w-5/12 w-full">
-                                        <h1 className="my-4 text-5xl font-bold leading-tight">
-                                            Turn your designs into production-ready frontend
+                                        <h1 className="my-4 text-4xl text-gray-800 font-bold leading-tight">
+                                        Empowering Electric Vehicles
+                                        Using Seamless Chargin
                                         </h1>
-                                        <p className="text-2xl mb-8">
-                                            Ship products 5-10x faster with your existing design tools, tech stacks & workflows!
-                                        </p>
-                                        <div className="flex justify-center mx-auto">
-                                            <button
-                                                className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                                View Projects
-                                            </button>
-                                            <button
-                                                className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                                Plugins
-                                            </button>
-                                        </div>
+                                        <br></br>
+                                      <br></br>
+                                      
+                                      <p>-----------------</p>
+                                      <p>Swipe Right</p>
+                                      <p>-----------------</p>
+                                      <br></br>
+                                      <br></br>
                                     </div>
                                 </div>
                             </div>
@@ -470,27 +466,17 @@ const Landing = () => {
                     <SwiperSlide><div className='w-full h-full bg-slate-100 p-16 Hello'>
                     
                     <div className="max-w-screen-sm min-h-screen text-white" style={{
-                        background: "linear-gradient(180deg, rgba(131, 126, 226, 1) 90%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
                     }}>
-                        <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={hero} />
+                        <div className="container text-gray-900 mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src='../../product.png' />
                             <div className="text-center lg:w-5/12 w-full">
-                                <h1 className="my-4 text-5xl font-bold leading-tight">
-                                    Turn your designs into production-ready frontend
+                                <h1 className="my-4 text-3xl  text-blue-800 font-bold leading-tight">
+                                    Efficient Features, Amazing experiences and ease Driving Electric 
                                 </h1>
                                 <p className="text-2xl mb-8">
-                                    Ship products 5-10x faster with your existing design tools, tech stacks & workflows!
+                                    We covered most of your task related to green Energy and your Vehicle!
                                 </p>
-                                <div className="flex justify-center mx-auto">
-                                    <button
-                                        className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                        View Projects
-                                    </button>
-                                    <button
-                                        className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                        Plugins
-                                    </button>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -500,25 +486,25 @@ const Landing = () => {
                     
                     
                     <div className="max-w-screen-sm min-h-screen text-white" style={{
-                        background: "linear-gradient(180deg, rgba(131, 126, 226, 1) 90%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
                     }}>
                         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={hero} />
+                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src='../../charge.jpeg' />
                             <div className="text-center lg:w-5/12 w-full">
-                                <h1 className="my-4 text-5xl font-bold leading-tight">
-                                    Turn your designs into production-ready frontend
-                                </h1>
-                                <p className="text-2xl mb-8">
+                                <h1 className="my-4 text-3xl font-bold text-blue-800 leading-tight">
+Charge On the Way 
+<br></br>
+or, Replace the Battery                                </h1>
+                                <p className="text-2xl text-green-900 mb-8">
                                     Ship products 5-10x faster with your existing design tools, tech stacks & workflows!
                                 </p>
                                 <div className="flex justify-center mx-auto">
                                     <button
                                         className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                        View Projects
+                                        Charged Battery
                                     </button>
                                     <button
                                         className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-                                        Plugins
+                                        Remaining Tips
                                     </button>
                                 </div>
                             </div>
@@ -527,22 +513,22 @@ const Landing = () => {
 
                     
                     </div></SwiperSlide>
-                    <SwiperSlide><div className='w-full h-full bg-slate-100 p-16 Hello'>  <div className="max-w-screen-sm min-h-screen text-white" style={{
-                        background: "linear-gradient(40deg, rgba(131, 126, 226, 1) 40%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
+                    <SwiperSlide><div className='w-full h-full bg-slate-100 p-16 Hello'> 
+                     <div className="max-w-screen-sm min-h-screen text-white" style={{
+                        background: "white", color: "GrayText"
                     }}>
                         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={hero} />
+                            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src='../../image-removebg-preview.png' />
                             <div className="text-center lg:w-5/12 w-full">
-                              
-                                <div className=" justify-center mx-auto mb-32">
-                                <Link to='/login' type="button" class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</Link>
+                              <h2 className='text-gray-700 text-3xl font-bold mb-5'>Start Your Jorney With Us       </h2>   <div className=" justify-center mx-auto mb-32">
+
+                                <Link to='/login' type="button" class="text-white w-full shadow-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign In</Link>
                                 <br></br>
-                                <Link to='/signup' type="button" class="py-2.5 w-full px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</Link>
+                                <Link to='/signin' type="button" class="py-2.5 w-full shadow-lg px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Sign Up</Link>
                                 </div>
                                 <br>
                                 </br>
-                                <br>
-                                </br> <br>
+                                <br></br> <br>
                                 </br> <br>
                                 </br> <br>
                                 </br> <br>
